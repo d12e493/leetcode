@@ -1,4 +1,4 @@
-package easy;
+package com.davis.level.easy;
 
 public class PowerOfTwo_231 {
 

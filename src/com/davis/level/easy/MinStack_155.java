@@ -1,4 +1,4 @@
-package easy;
+package com.davis.level.easy;
 
 import java.util.ArrayList;
 import java.util.List;

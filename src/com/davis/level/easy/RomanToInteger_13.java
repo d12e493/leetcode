@@ -1,4 +1,4 @@
-package easy;
+package com.davis.level.easy;
 
 import java.util.HashMap;
 import java.util.Map;

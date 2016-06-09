@@ -1,4 +1,4 @@
-package easy;
+package com.davis.level.easy;
 
 public class ReverseLinkedList_206 {
 
@@ -19,13 +19,13 @@ public class ReverseLinkedList_206 {
 		ListNode reverseNode = null;
 
 		while (head != null) {
-			// å…ˆå°‡ä¸‹ä¸€ç¯€é»æš«å­˜
+			// ??ˆå?‡ä?‹ä?ç¯?é»æš«å­?
 			ListNode nextList = head.next;
-			// æŠŠä¸‹ä¸€ç¯€é»æ”¹æˆä¹‹å‰reverseå¥½çš„list
+			// ??Šä?‹ä?ç¯?é»æ”¹??ä?‹å?reverseå¥½ç?„list
 			head.next = reverseNode;
-			// æŠŠé€™æ¬¡èª¿æ•´å¥½çš„æ”¾å›reverseNode
+			// ??Šé?™æ¬¡èª¿æ•´å¥½ç?„æ”¾??reverseNode
 			reverseNode = head;
-			// æŒ‡å‘ä¸‹ä¸€å€‹ç¯€é»
+			// ??‡å?‘ä?‹ä??‹ç?é»?
 			head = nextList;
 		}
 

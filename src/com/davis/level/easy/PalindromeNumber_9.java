@@ -1,4 +1,4 @@
-package easy;
+package com.davis.level.easy;
 
 public class PalindromeNumber_9 {
 
@@ -10,23 +10,23 @@ public class PalindromeNumber_9 {
 
 		final int BASE_MULTIPLE = 10;
 		int divide = 1;
-		// 計算要從幾位數開始
+		// 計�?��?��?�幾位數??��??
 		while (x / divide >= BASE_MULTIPLE) {
 			divide = divide * BASE_MULTIPLE;
 		}
 
 		System.out.println("divide : " + divide);
 
-		// 一直比對最左邊和最右邊的數字
+		// �??��比�?��?左�?��?��??��??��?�數�?
 		while (x > 0) {
 			int left = x / divide;
 			int right = x % 10;
 			if (left != right) {
 				return false;
 			}
-			// 相等後往內縮一個數字，繼續比對
+			// ?��等�?��??��縮�??�數字�?�繼續�?��??
 			x = x % divide / BASE_MULTIPLE;
-			// 由於左右各內縮一格，除數基底小100倍
+			// ?��?��左右??�內縮�??��，除?��?��底�??100??
 			divide /= 100;
 		}
 
