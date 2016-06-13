@@ -22,7 +22,7 @@ public class MergeTwoSortedLists_21 {
 			lastNode = lastNode.next;
 		}
 
-		// ¦pªGl2ªºªø«×¤ñl1¦h
+		// å¦‚æžœl2çš„é•·åº¦æ¯”l1å¤š
 		if (l1 != null) {
 			lastNode.next = l1;
 		} else {

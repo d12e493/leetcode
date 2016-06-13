@@ -29,10 +29,10 @@ public class SameTree_100 {
 			return p.val == q.val;
 		}
 
-		// ??ˆæ?”è?ƒå·¦??Šæ˜¯?¦?›¸ç­?
+		// å…ˆæ¯”è¼ƒå·¦é‚Šæ˜¯å¦ç›¸ç­‰
 		boolean leftSame = isSameTree(p.left, q.left);
 
-		// å·¦é?Šç›¸ç­‰æ?é?è¦æ?”è?ƒå³???
+		// å·¦é‚Šç›¸ç­‰æ‰éœ€è¦æ¯”è¼ƒå³é‚Š
 		if (leftSame) {
 			boolean rightSame = isSameTree(p.right, q.right);
 			if (rightSame) {

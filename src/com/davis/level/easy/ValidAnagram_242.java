@@ -12,7 +12,7 @@ public class ValidAnagram_242 {
 				return false;
 			}
 
-			// è¨ˆç?—å?„å?—æ?æ•¸??ç?„map
+			// è¨ˆç®—å„å­—æ¯æ•¸é‡çš„map
 			Map<Character, Integer> sourceMap = new HashMap<Character, Integer>();
 
 			for (int i = 0; i < s.length(); i++) {
@@ -24,7 +24,7 @@ public class ValidAnagram_242 {
 			for (int i = 0; i < t.length(); i++) {
 				char eachChar = t.charAt(i);
 
-				// å¦‚æ?œtarget??„å?—ä¸²?‰¾ä¸åˆ°ï¼Œè¡¨ç¤ºä?ç¬¦???
+				// å¦‚æœtargetçš„å­—ä¸²æ‰¾ä¸åˆ°ï¼Œè¡¨ç¤ºä¸ç¬¦åˆ
 				if (sourceMap.get(eachChar) == null) {
 					return false;
 				} else {
